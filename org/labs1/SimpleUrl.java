@@ -31,7 +31,6 @@ public class SimpleUrl {
         }
     }
 
-
     public String getProtocol() {
         return protocol;
     }
