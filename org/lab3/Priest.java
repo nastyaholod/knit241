@@ -1,6 +1,6 @@
 package org.lab3;
 
-public class Priest extends Player {
+public class Priest extends Player implements Heal {
 
     public Priest(String name) {
         super(name, 80, 10, 3); // Например, здоровье 80, урон 5, защита 3
@@ -57,7 +57,7 @@ public class Priest extends Player {
         player.decreaseHealth(getDamage());
     }
 
-
+@Override
     // Метод для лечения союзника
     public void heal(Player player) {
         if (player.getCurrentHealth() > 0) {
