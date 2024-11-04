@@ -20,7 +20,7 @@ class DictionaryStatistic {
         analyzeDictionary();
     }
 
-    // Анализ словаря (нахождение полиндромов, подсчет частоты букв, максимальная/минимальная длина слов)
+    // Анализ словаря
     private void analyzeDictionary() {
         maxWordLength = Integer.MIN_VALUE;
         minWordLength = Integer.MAX_VALUE;
@@ -41,7 +41,7 @@ class DictionaryStatistic {
         System.out.println("Общее количество слов палиндромов в словаре: " + polindrom);
     }
 
-    // Проверка, является ли слово полиндромом
+    //полиндромом
     private boolean isPalindrome(String word) {
         int length = word.length();
         for (int i = 0; i < length / 2; i++) {
